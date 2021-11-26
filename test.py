@@ -1,7 +1,6 @@
+from fusion import sort
 import random
 
-def sort(array: list[int]) -> list[int]:
-    return array
 
 def check_sort() -> bool:
     array : list = [random.randint(0, 100) for i in range(100)]

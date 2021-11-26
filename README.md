@@ -57,9 +57,15 @@ Mesurez combien de temps prend python à générer un tableau composés de nombr
 
 Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécution en fonction de la taille de l'entrée.
 
+![](image/README/1637843143166.png)
+
 Comment vous semble évoluer la courbe ?
 
+La courbe semble évolué de façon linéaire donc une fonction de complexité O(n)
+
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
+
+O(n)
 
 <img src="o.webp" width="400">
 
@@ -81,6 +87,10 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+```
+Cet algorithme prend un tableau en entrée et tri les élements dans un autre croissant en parcourant tout le tableau
+```
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -92,7 +102,11 @@ Mesurez le temps d'éxécution pour un tableau de :
 
 Tracez le graphique correspondant.
 
+![](image/README/1637842575145.png)
+
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+
+La complexité de ce tri semble être de o(n) car nous avons une boucle for dans une boucle for 
 
 ### 2. Tri par insertion
 
@@ -104,6 +118,10 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+```
+Le tri par insertion prend une liste et vérifie les valeurs une par une en partant du premier terme est regardant si la valeur à sa gauche et plus petit si oui l'insert check le suivant si plus grand ou égal l'insert.
+```
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -115,7 +133,11 @@ Mesurez le temps d'éxécution pour un tableau de :
 
 Tracez le graphique correspondant.
 
+![](image/README/1637843555258.png)
+
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+
+La complexité semble être aussi de O(n^2) mais il est plus rapide que celui d'avant car nous avons plus qu'une boucle for et une autre while.
 
 ### 3. Tri par fusion
 
@@ -191,15 +213,25 @@ Mesurez le temps d'éxécution pour un tableau de :
 
 Tracez le graphique correspondant.
 
+![](image/README/1637843792904.png)
+
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
 
+La complexité semble être O(n.log(n))) et celà semble logique car nous avons maintenant une boucle for 
+
 Question bonus : Y a-t-il des tailles de tableaux pour lesquelles le tri par fusion n'est pas aussi rapide que les précédents tris abordés ?
+
+Le tri par fusion est peut-être moins rapide que les précédents sur les tableaux de très petite taille car la différence de complexité dépend beaucoup de la taille de l'entrée pour voir une différence.
 
 ### 4. sort()
 
 Bien que tout cela soit fascinant, Python possède sa propre méthode de tri : `sort()`.
 
 Une dernière fois, analysez le temps d'exécution et découvrez si python fait mieux que nos implémentations rudimentaires ;)
+
+![](image/README/1637843914995.png)
+
+Comme on peux voir l'algo de tri de sort() de python est très rapide bien plus rapide que les 3 autres implementés au dessus comme le montre les deux graphiques en fin de page.
 
 ## Pour rendre ce TP
 
@@ -208,3 +240,7 @@ Merci de faire une Pull Request vers ce repository.
 Le nom de la PR doit contenir votre nom et celui de votre collègue si vous êtes en binôme.
 
 Vérifiez que votre code est conforme aux normes pep8 et aux autres critères de qualité dont nous avons parlé.
+
+![](image/README/1637844351825.png)
+
+![](image/README/1637844384863.png)
