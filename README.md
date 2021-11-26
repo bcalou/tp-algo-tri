@@ -59,7 +59,11 @@ Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécu
 
 Comment vous semble évoluer la courbe ?
 
+    Elle ressemble à une fonction linéare
+
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
+
+    o(n)
 
 <img src="o.webp" width="400">
 
@@ -81,6 +85,9 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+    On avance index par index dans un tableau en le permutant avec la plus petit situer après cette index du tableau.
+    On se met à un index et l'on parcours le tableau en cherchant qu'elle est la valeur la plus petit puis on permute la valeur la plus petite avec l'index selectionner sauf si l'index est la valeur la plus petit.
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -92,7 +99,12 @@ Mesurez le temps d'éxécution pour un tableau de :
 
 Tracez le graphique correspondant.
 
+<img src="graphiques.png">
+
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+
+    O(n²)
+    Oui, c'est cohérent par raport au fait que j'ai implémenter une boucle imbriqué.
 
 ### 2. Tri par insertion
 
@@ -104,6 +116,9 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+    On part d'un index, on compare sa valeur avec la valeur de tous les index précédents et on l'y insert si il est plus petit que des valeur qui le précéde.
+    On prend une valeur du tableau et on la compare avec chacune qui la précédente jusqu'à qu'une de ces valeurs est plus grand que la valeur selection et on la placera juste devant cette valeur.
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -115,7 +130,12 @@ Mesurez le temps d'éxécution pour un tableau de :
 
 Tracez le graphique correspondant.
 
+<img src="graphiques.png">
+
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+
+    O(n²)
+    Oui, c'est cohérent par raport au fait que j'ai implémenter une boucle imbriqué.
 
 ### 3. Tri par fusion
 
@@ -193,7 +213,13 @@ Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
 
+    0(log N)
+    Oui, parce qu'il faut doubler la taille du tableau afin d'augmenter le nombre de tour de l'algorithme.
+
 Question bonus : Y a-t-il des tailles de tableaux pour lesquelles le tri par fusion n'est pas aussi rapide que les précédents tris abordés ?
+    
+    Pour une taille de tableau de 100, le tri insertion est plus rapide.
+
 
 ### 4. sort()
 
