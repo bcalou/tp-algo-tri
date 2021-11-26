@@ -81,6 +81,9 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+> On parcourt tout le tableau pour trouver la plus petite valeur. On bloque cette valeur au début du tableau et on répète l'opération pour toutes les valeurs restantes.
+> Pour l'expliquer à quelqu'un, je lui donnerai l'exemple du jeu de carte.
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -103,6 +106,8 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 <img src="insertion.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+
+> A chaque valeur, j'essaie de la trier sur la partie gauche du tableau. Je décale les valeurs une par une jusqu'à ce que la valeur suivante (à gauche) soit plus petite.
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -208,3 +213,7 @@ Merci de faire une Pull Request vers ce repository.
 Le nom de la PR doit contenir votre nom et celui de votre collègue si vous êtes en binôme.
 
 Vérifiez que votre code est conforme aux normes pep8 et aux autres critères de qualité dont nous avons parlé.
+
+## Temps d'executions
+
+<img src="temps.png">
