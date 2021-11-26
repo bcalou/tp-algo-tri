@@ -59,9 +59,13 @@ Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécu
 
 Comment vous semble évoluer la courbe ?
 
+# Elle semble augmenter proportionellement au nombre d'entrées
+
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
 
 <img src="o.webp" width="400">
+
+# Elle resemble fortement au o(n)
 
 #### Quelques exemples de complexités courante :
 
@@ -81,6 +85,9 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
 
+# L'algorithme parcourt tout le tableau depuis l'index 0 pour échanger la plus petite valeur trouvé avec celle de l'index trouvé.
+# Il recommence en incrémentant l'index de départ.
+
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
 Mesurez le temps d'éxécution pour un tableau de :
@@ -94,7 +101,9 @@ Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
 
-### 2. Tri par insertion
+# Elle semble être de complexité o(n²)
+
+### 2s. Tri par insertion
 
 Créez un fichier `insertion.py`.
 
@@ -116,6 +125,8 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+
+# Elle semble être de complexité o(n²)
 
 ### 3. Tri par fusion
 
@@ -200,6 +211,10 @@ Question bonus : Y a-t-il des tailles de tableaux pour lesquelles le tri par fus
 Bien que tout cela soit fascinant, Python possède sa propre méthode de tri : `sort()`.
 
 Une dernière fois, analysez le temps d'exécution et découvrez si python fait mieux que nos implémentations rudimentaires ;)
+
+# Ci-contre, les courbes de temps de tri desdifférents algorithmes utilisés.
+
+<img src="Tri.pdf">
 
 ## Pour rendre ce TP
 
