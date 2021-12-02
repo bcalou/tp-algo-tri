@@ -58,8 +58,11 @@ Mesurez combien de temps prend python à générer un tableau composés de nombr
 Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécution en fonction de la taille de l'entrée.
 
 Comment vous semble évoluer la courbe ?
+    La courbe semble évoluer da façon proportionnelle.
 
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
+    La plus ressemblante à notre situation est la courbe 
+    O(N).
 
 <img src="o.webp" width="400">
 
@@ -79,7 +82,8 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 
 <img src="selection.gif">
 
-Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ? 
+    On prend le premier chiffre. On le compare avec les suivants un à un puis si on en trouve un plus on le garde. On continue jusqu'à la fin et donc celui qu'on a gardé au final est le plus petit et on l'inverse avec le premier chiffre. On refait la même chose mais en partant du deuxième et ainsi de suite.
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -91,8 +95,13 @@ Mesurez le temps d'éxécution pour un tableau de :
 - 10000 entrées
 
 Tracez le graphique correspondant.
+<img src="graphique_comparaison_algo_tri.png">
 
-Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+Quel semble être la complexité de notre fonction de tri ? 
+    La compléxité du tri par sélection semble être O(N²).
+
+Cela est-il logique par rapport au code que vous avez implémenté ?
+    C'est logique par rapport au code implémenté car on fait une boucle dans une boucle qui dépend de la taille de N la taille du tableau.
 
 ### 2. Tri par insertion
 
@@ -103,6 +112,8 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 <img src="insertion.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+    On prend le premier élément du tableau et on regarde le suivant. Si il est plus petit on l'insère avant le premier et on fait "glissé" le premier d'une place.
+    On regarde ensuite celui d'après ces deux nombres (qui sont déjà triés entre eux donc) et on fait le même procédé, c'est à dire, on l'insère à la bonne place et les nombres plus grand glisse d'une place.
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -116,6 +127,8 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+    La compléxité du tri par insertion semble également être O(N²).
+    C'est logique par rapport au code implémenté car on a aussi une boucle dans une boucle dépendants de la taille N du tableau.
 
 ### 3. Tri par fusion
 
@@ -192,8 +205,11 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+    La compléxité du tri par fusion semble être O(log(N)).
+    C'est logique par rapport au code implémenté car même si on double la taille du tableau, ça ne rajoutera qu'une étape au programme.
 
 Question bonus : Y a-t-il des tailles de tableaux pour lesquelles le tri par fusion n'est pas aussi rapide que les précédents tris abordés ?
+    Probablement pour des tableaux très petits comme avec 1 élement car quel que soit sa taille le tri par fusion nécessite 2 étapes, le découpage puis la fusion. Tandis que par sélection et par insertion le tri est fait "directement". 
 
 ### 4. sort()
 
@@ -208,3 +224,9 @@ Merci de faire une Pull Request vers ce repository.
 Le nom de la PR doit contenir votre nom et celui de votre collègue si vous êtes en binôme.
 
 Vérifiez que votre code est conforme aux normes pep8 et aux autres critères de qualité dont nous avons parlé.
+
+
+
+
+
+
