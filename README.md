@@ -57,9 +57,11 @@ Mesurez combien de temps prend python à générer un tableau composés de nombr
 
 Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécution en fonction de la taille de l'entrée.
 
-Comment vous semble évoluer la courbe ?
+Comment vous semble évoluer la courbe ? 
+# La courbe est une ligne droite partant de 0, elle evolue en même temps que l'entrée.
 
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
+# Cela correspond a une compléxité O(N).
 
 <img src="o.webp" width="400">
 
@@ -80,6 +82,7 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 <img src="selection.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+# Parcours la liste et recupère le nombre le plus petit puis le mets au plus petit rang disponible.
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -93,6 +96,7 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+# Cela correspond a une compléxité O(N²)
 
 ### 2. Tri par insertion
 
@@ -103,6 +107,7 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 <img src="insertion.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+# selectionne les index les uns après les autres et décale le nombre jusqu'a ce que index-1 soit plus petit.
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -116,6 +121,7 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+#
 
 ### 3. Tri par fusion
 
@@ -192,6 +198,7 @@ Mesurez le temps d'éxécution pour un tableau de :
 Tracez le graphique correspondant.
 
 Quel semble être la complexité de notre fonction de tri ? Cela est-il logique par rapport au code que vous avez implémenté ?
+# Cela correspond a une compléxité O(log(N))
 
 Question bonus : Y a-t-il des tailles de tableaux pour lesquelles le tri par fusion n'est pas aussi rapide que les précédents tris abordés ?
 
