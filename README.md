@@ -59,9 +59,15 @@ Sur un tableur, générez un tableau permettant de visualiser le temps d'éxécu
 
 Comment vous semble évoluer la courbe ?
 
+
 Observez bien les différentes courbes du graphique ci-dessous. Quelle est la plus ressemblante à notre situation ?
 
 <img src="o.webp" width="400">
+
+
+```diff
++La courbe ressemble à une fonction affine, cela corespond à une complexité O(nlog(n))
+```
 
 #### Quelques exemples de complexités courante :
 
@@ -80,6 +86,11 @@ Observez attentivement l'animation de tri par sélection ci-dessous pour en comp
 <img src="selection.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+
+
+```diff
++On parcours le tableau pour trouver la plus petite valeur, une fois la valeur trouver on la mets àla position 0, puis à nouveaux on reparcours le tableaux moins la valeur déja trillé ainsi de suite jusqu'à triller complétement le tableau
+```
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
@@ -103,6 +114,14 @@ Observez attentivement l'animation de tri par insertion ci-dessous pour en compr
 <img src="insertion.gif">
 
 Écrivez en français classique ce que vous voyez. Quel est le fonctionnement ? Comment l'expliqueriez-vous à quelqu'un ?
+
+```diff
++ Le tri par insertion cherche la première  valeur plus petite que la première valeur du tableau, après cette première étape on a donc deux valeurs triés entre elles. 
+
++ On peut considérer que le tableau est divisé en deux, une partie trié et l'autre non.
+
++ Pour les étapes qui suivent on prend la première valeur du tableau non trié, on parcour depuis la fin le tableau trié et dès que notre valeur est plus grande que la valeur du tableau trié on l'insert juste après.
+```
 
 Puis implémentez l'algorithme en python. Vérifiez son bon fonctionnement avec différentes entreés.
 
